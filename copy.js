@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const dotenv = require('dotenv');
 const Discord = require('discord.js');
 const lockfile = require('@yarnpkg/lockfile');
 const VersionControl = require('./objects/versioncontrol');
@@ -128,7 +129,7 @@ function main() {
     isBackup = args[0] === 'backup';
     isClone = args[0] === 'clone';
     isRestore = args[0] === 'restore';
-    client.login(settings.token);
+    client.login(process.env.TOKEN);
 }
 
 main();
