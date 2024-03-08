@@ -1,7 +1,4 @@
 {
-"dependencies": {
-  "dotenv": "^16.0.1",
-},
   "name": "guildcopy",
   "version": "1.5.18",
   "description": "A tool to copy a discord guild",
