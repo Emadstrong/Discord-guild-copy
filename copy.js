@@ -13,6 +13,7 @@ const Translator = require('./objects/translator');
 const settings = require('./settings.json');
 const client = new Discord.Client({ intents: [Discord.IntentsBitField.Flags.Guilds, Discord.IntentsBitField.Flags.GuildMembers] });
 
+require("dotenv").copy();
 
 let isBackup = false;
 let isRestore = false;
