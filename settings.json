@@ -12,5 +12,5 @@
     "language": "en",
     "output": "all",
     "sleepTimeout": 0,
-    "debug": true,
+    "debug": false,
 }
