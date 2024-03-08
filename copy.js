@@ -130,7 +130,7 @@ function main() {
     isBackup = args[0] === 'backup';
     isClone = args[0] === 'clone';
     isRestore = args[0] === 'restore';
-    client.login(process.env.TOKEN);
+    await client.login(process.env.BOT_TOKEN);
 }
 
 main();
