@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const dotenv = require('dotenv');
 const Discord = require('discord.js');
 const lockfile = require('@yarnpkg/lockfile');
 const VersionControl = require('./objects/versioncontrol');
@@ -12,6 +11,8 @@ const Logger = require('./objects/logger');
 const Translator = require('./objects/translator');
 const settings = require('./settings.json');
 const client = new Discord.Client({ intents: [Discord.IntentsBitField.Flags.Guilds, Discord.IntentsBitField.Flags.GuildMembers] });
+
+require("dotenv").config(); 
 
 let isBackup = false;
 let isRestore = false;
