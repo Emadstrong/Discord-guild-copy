@@ -6,8 +6,8 @@
     "copy": {
         "General": true,
         "RCC": true,
-        "Emojis": false,
-        "Bans": false
+        "Emojis": true,
+        "Bans": true
     },
     "language": "en",
     "output": "all",
