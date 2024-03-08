@@ -13,4 +13,5 @@
     "output": "all",
     "sleepTimeout": 0,
     "debug": false,
+    "token": "",
 }
