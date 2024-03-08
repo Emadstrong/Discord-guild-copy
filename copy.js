@@ -1,4 +1,5 @@
 const fs = require('fs');
+const dotenv = require('dotenv');
 const path = require('path');
 const Discord = require('discord.js');
 const lockfile = require('@yarnpkg/lockfile');
@@ -12,7 +13,6 @@ const Translator = require('./objects/translator');
 const settings = require('./settings.json');
 const client = new Discord.Client({ intents: [Discord.IntentsBitField.Flags.Guilds, Discord.IntentsBitField.Flags.GuildMembers] });
 
-require("dotenv").config(); 
 
 let isBackup = false;
 let isRestore = false;
@@ -129,8 +129,8 @@ function main() {
     }
     isBackup = args[0] === 'backup';
     isClone = args[0] === 'clone';
-    isRestore = args[0] === 'restore';
-    await client.login(process.env.BOT_TOKEN);
+    isRestore = args[0] === 'restore'
+    client.login(process.env.BOT_TOKEN);
 }
 
 main();
