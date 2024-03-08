@@ -12,6 +12,5 @@
     "language": "en",
     "output": "all",
     "sleepTimeout": 0,
-    "debug": false,
-    "token": ""
+    "debug": true,
 }
